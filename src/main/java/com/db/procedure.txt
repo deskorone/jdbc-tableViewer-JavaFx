@@ -1,0 +1,9 @@
+create procedure insert_data(username character varying, usersurrname character varying, patronymicvar character varying, yearpost integer, yearvip integer, schoolname character varying, towne character varying)
+    language sql
+as
+$$
+INSERT INTO users(name, surname, patronymic, yearp, yearv, schoolid) VALUES (username, usersurrname, patronymicvar, yearpost, yearvip, (SELECT id FROM school WHERE school.name=schoolname AND school.town=towne))
+$$;
+
+alter procedure insert_data(varchar, varchar, varchar, integer, integer, varchar, varchar) owner to postgres;
+

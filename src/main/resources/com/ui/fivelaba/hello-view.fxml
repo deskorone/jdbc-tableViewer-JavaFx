@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="487.0" prefWidth="760.0" spacing="20.0" style="-fx-background-color: D0CAB2;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ui.fivelaba.UiControllers">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="430.0" prefWidth="886.0" style="-fx-background-color: DED9C4;">
+      <children>
+         <Button fx:id="openBut" layoutX="14.0" layoutY="322.0" mnemonicParsing="false" style="-fx-background-color: #96C7C1;" text="Open" />
+         <TableView fx:id="table" layoutY="-3.0" prefHeight="315.0" prefWidth="867.0">
+           <columns>
+             <TableColumn fx:id="nameC" prefWidth="113.60000228881836" text="Name" />
+             <TableColumn fx:id="surnameC" prefWidth="95.20001220703125" text="Surname" />
+               <TableColumn fx:id="patrC" prefWidth="115.19999694824219" text="Patronomyc" />
+               <TableColumn fx:id="yearP" prefWidth="171.99993896484375" text="Year of admission" />
+               <TableColumn fx:id="yearE" prefWidth="107.2000732421875" text="Year of ending" />
+               <TableColumn fx:id="schoolC" prefWidth="130.4000244140625" text="School" />
+               <TableColumn fx:id="townC" prefWidth="129.5999633789063" text="Town" />
+           </columns>
+         </TableView>
+         <Button fx:id="addBut" layoutX="14.0" layoutY="355.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="46.0" style="-fx-background-color: #96C7C1;" text="Add" />
+         <TextField fx:id="nameArea" layoutX="187.0" layoutY="322.0" prefHeight="25.0" prefWidth="104.0" />
+         <TextField fx:id="surnameArea" layoutX="370.0" layoutY="322.0" prefHeight="25.0" prefWidth="104.0" />
+         <TextField fx:id="patrArea" layoutX="546.0" layoutY="322.0" prefHeight="25.0" prefWidth="104.0" />
+         <TextField fx:id="yearvArea" layoutX="187.0" layoutY="380.0" prefHeight="25.0" prefWidth="104.0" />
+         <TextField fx:id="townArea" layoutX="546.0" layoutY="380.0" prefHeight="25.0" prefWidth="104.0" />
+         <TextField fx:id="schoolNameArera" layoutX="370.0" layoutY="380.0" prefHeight="25.0" prefWidth="104.0" />
+         <TextField fx:id="yearpArea" layoutX="724.0" layoutY="322.0" prefHeight="25.0" prefWidth="104.0" />
+         <Label fx:id="n" layoutX="155.0" layoutY="322.0" prefHeight="25.0" prefWidth="64.0" text="Name" />
+         <Label fx:id="n1" layoutX="306.0" layoutY="322.0" prefHeight="25.0" prefWidth="64.0" text="Surname" />
+         <Label fx:id="n2" layoutX="482.0" layoutY="322.0" prefHeight="25.0" prefWidth="64.0" text="Patronomyc" />
+         <Label fx:id="n3" layoutX="660.0" layoutY="322.0" prefHeight="25.0" prefWidth="64.0" text="Yearp" />
+         <Label fx:id="n4" layoutX="155.0" layoutY="380.0" prefHeight="25.0" prefWidth="64.0" text="Yearv" />
+         <Label fx:id="n5" layoutX="306.0" layoutY="380.0" prefHeight="25.0" prefWidth="64.0" text="School" />
+         <Label fx:id="n6" layoutX="482.0" layoutY="380.0" prefHeight="25.0" prefWidth="64.0" text="Town" />
+         <TextField fx:id="ratingArea" layoutX="724.0" layoutY="379.0" prefHeight="26.0" prefWidth="64.0" />
+         <Label fx:id="n31" layoutX="660.0" layoutY="379.0" prefHeight="25.0" prefWidth="64.0" text="Rating" />
+         <Button fx:id="eddingBut" layoutX="14.0" layoutY="392.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="38.0" style="-fx-background-color: #96C7C1;" text="Edit" />
+         <Label fx:id="eddingLabel" layoutX="52.0" layoutY="393.0" prefHeight="25.0" prefWidth="64.0" text="Edding..." />
+         <Label fx:id="incorrectLabel" layoutX="366.0" layoutY="355.0" prefHeight="27.0" prefWidth="449.0" text="Incorrect date" textFill="RED">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Button fx:id="doneBut" layoutX="100.0" layoutY="392.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="46.0" style="-fx-background-color: #96C7C1;" text="Done" />
+         <Button fx:id="getBut" layoutX="792.0" layoutY="378.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="46.0" style="-fx-background-color: #96C7C1;" text="Done" />
+         <Button fx:id="delBut" layoutX="90.0" layoutY="354.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="56.0" style="-fx-background-color: #96C7C1;" text="Delete" />
+         <Button fx:id="getYearBut" layoutX="90.0" layoutY="321.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="56.0" style="-fx-background-color: #96C7C1;" text="Year teach" />
+      </children>
+   </AnchorPane>
+</VBox>
